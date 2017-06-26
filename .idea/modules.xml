@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hello-smvc.iml" filepath="$PROJECT_DIR$/hello-smvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smvcbusiness/smvcbusiness.iml" filepath="$PROJECT_DIR$/smvcbusiness/smvcbusiness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smvcdao/smvcdao.iml" filepath="$PROJECT_DIR$/smvcdao/smvcdao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webservices/webservices.iml" filepath="$PROJECT_DIR$/webservices/webservices.iml" />
+    </modules>
+  </component>
+</project>

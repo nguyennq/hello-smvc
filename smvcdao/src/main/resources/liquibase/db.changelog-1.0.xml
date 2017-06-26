@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="hale (generated)" id="1440149944132-2">
+        <createTable tableName="smartid_callback">
+            <column name="id" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="document_type" type="CHAR(1)"/>
+            <column name="scan_transaction_id" type="VARCHAR(45)"/>
+            <column name="status" type="VARCHAR(45)"/>
+            <column name="country" type="VARCHAR(45)"/>
+            <column name="description" type="VARCHAR(45)"/>
+            <column name="complete" type="VARCHAR(45)"/>
+            <column name="classified" type="VARCHAR(45)"/>
+            <column name="disapprove_reason" type="VARCHAR(45)"/>
+            <column name="first_name" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(45)"/>
+            <column name="middle_name" type="VARCHAR(45)"/>
+            <column name="date_of_birth" type="date"/>
+            <column name="date_of_expiry" type="date"/>
+            <column name="date_of_issue" type="date"/>
+            <column name="gender" type="CHAR(1)"/>
+            <column name="personal_number" type="VARCHAR(45)"/>
+            <column name="document_number" type="VARCHAR(45)"/>
+            <column name="place_of_birth" type="VARCHAR(45)"/>
+            <column name="face_math" type="VARCHAR(45)"/>
+            <column name="images" type="BLOB"/>
+            <column name="supported" type="VARCHAR(45)"/>
+            <column name="reserved_datas" type="VARCHAR(45)"/>
+            <column name="created" type="datetime"/>
+            <column name="last_updated" type="datetime"/>
+            <column name="mrzLine1" type="VARCHAR(45)"/>
+            <column name="mrzLine2" type="VARCHAR(45)"/>
+            <column name="version_no" type="VARCHAR(45)"/>
+            <column name="deleted" type="VARCHAR(45)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="hale (generated)" id="1440149944132-4">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="smartid_callback"/>
+    </changeSet>
+</databaseChangeLog>

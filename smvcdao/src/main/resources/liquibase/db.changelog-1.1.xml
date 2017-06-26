@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="vuluan (generated)" id="1440645460338-1">
+        <createTable tableName="app_setting">
+            <column name="key" type="CHAR(2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="value" type="TEXT"/>
+            <column name="comment" type="VARCHAR(255)"/>
+            <column name="encrypted" type="BIT(1)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="vuluan (generated)" id="1440645460338-2">
+        <addPrimaryKey columnNames="key" constraintName="PRIMARY" tableName="app_setting"/>
+    </changeSet>
+</databaseChangeLog>

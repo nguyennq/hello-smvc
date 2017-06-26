@@ -1,0 +1,8 @@
++ IDE
+    Netbeans
+    Eclipse
+    IntelliJ
++ Server App
+    - WebServer: Tomcat (JBoss)
+    - DB: MySQL
+    - Liquibase
